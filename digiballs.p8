@@ -29,14 +29,10 @@ function load_bricks(lvl)
 				h=brick_h,
 				active=true,
 				})
-				
-				if rnd(1) > 0.3 then
 				brick_total += 1
 				end
-				
 			end
 		end
- end
 end
 	
 	
@@ -138,6 +134,7 @@ for b in all(bricks) do
 		 	ball.dy = -ball.dy
 		 	b.active = false
 		 	score += 1
+		 	brick_total -= 1
 		 	if score > hiscore then
 		 		hiscore = score
 		 	end
@@ -145,7 +142,11 @@ for b in all(bricks) do
  end
 end	
 
-
+--change level--
+if brick_total == 0 then
+	current_lvl += 1
+	load_bricks(current_lvl)
+end
 
 --gameover--
 if mode == "gameover" and btnp(4) then mode = "game"
@@ -189,7 +190,8 @@ if mode=="title" then
 	end
 
 --counter--
-print(score,6,5,7) 
+print(score,6,5,7)
+print(brick_total)
 --restart screen--
 	if mode == "gameover" then
 	cls()
@@ -198,6 +200,7 @@ print(score,6,5,7)
 	print("high score: ",6,5,7)
 	print(hiscore,50,5,7)
 	end
+	
 end
 __gfx__
 000000000000000000000000bbbbbbbbbbbbbbbb0000000086866888888668680000000000000000000000000000000000000000000000000000000000000000
