@@ -40,6 +40,7 @@ function _init()
 mode="title"
 current_lvl = 1
 score = 0
+
 --paddle/player--
 player = {
 x=63.0,	
@@ -95,7 +96,8 @@ if mode == "title" then
 	--shoot da bawl--
 	if btnp(5)then
 	ball.active=true
-	ball.dx = .66
+	ball.dx = .2
+	ball.dy = 2
 	end
 	
 	if ball.active then
@@ -145,6 +147,7 @@ end
 --change level--
 if brick_total == 0 then
 	current_lvl += 1
+	ball.active = false
 	load_bricks(current_lvl)
 end
 
@@ -185,7 +188,11 @@ print(score,5,5,7)
 		end
 	end
 
-
+if brick_total == 0 then
+ cls()
+ print("chester stone bitch",45,14)
+ print("press z to continue",32,60,8)
+ end
 --draw ball--		
 		if ball.active==true then
 		spr(5,ball.x,ball.y)
