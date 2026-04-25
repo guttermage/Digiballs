@@ -179,6 +179,8 @@ if mode=="title" then
 	for b in all(bricks) do
 		if b.active then
 			spr(6, b.x, b.y, 2, 1)
+			--counter--
+print(score,5,5,7)
 			end
 		end
 	end
@@ -189,9 +191,7 @@ if mode=="title" then
 		spr(5,ball.x,ball.y)
 	end
 
---counter--
-print(score,6,5,7)
-print(brick_total)
+
 --restart screen--
 	if mode == "gameover" then
 	cls()
