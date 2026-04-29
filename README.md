@@ -1,4 +1,4 @@
-# Digiballs
+# Digi-Balls
 
 <p align="center">
   <a href="https://guttermage.itch.io/digi-balls">
