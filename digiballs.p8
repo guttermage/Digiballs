@@ -241,6 +241,8 @@ if mode=="title" then
 	print("\fbdigi-balls",45,45)
 	local bounce = sin(time()) * 5
 	print("press z to start",34,68+bounce)
+	local bounce = sin(time()) * 7
+	print("and x to shoot!", 36,75+bounce)
 	
 --pressing z to draw game background--	
 
