@@ -2,7 +2,8 @@
 
 <p align="center">
   <a href="https://guttermage.itch.io/digi-balls">
-    <img src="https://img.shields.io/badge/PLAY_DIGI--BALLS-000000?style=for-the-badge&logo=itch.io&logoColor=00E436&labelColor=000000&color=000000" alt="Play Digi-balls">
+    <img src="https://img.shields.io/badge/PLAY_DIGI--BALLS-000000?style=for-the-badge&logo=itch.io&logoColor=00E436&labelColor=000000&color=000000" alt="Play Digi-Balls"
+      height="50">
   </a>
 </p>
 
