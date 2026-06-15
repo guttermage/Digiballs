@@ -129,15 +129,15 @@ end
 		end
 		
 --ball paddle collision --	
-	if ball.y >= player.y - 3.9
+	if ball.y >= player.y - 8
  	and ball.x >=player.x
 	 and ball.x <=player.x+16 then
 		 ball.dy = -ball.dy
-		 ball.y = player.y - 3.9
+		 ball.y = player.y - 8
 		 
 		 local hit_spot = ball.x - (player.x + 8)
 		 
-		 ball.dx = hit_spot * 0.15
+		 ball.dx = hit_spot * 0.10
 		 sfx(0)
 	end
 	
